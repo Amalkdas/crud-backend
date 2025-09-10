@@ -4,7 +4,7 @@ const server = jsonserver.create()
 
 //middleware//
 
-const middleware = jsonserver.defaults()
+const middleware = jsonserver.defaults({ static: false })
 //route//
 
 const route = jsonserver.router('db.json')
